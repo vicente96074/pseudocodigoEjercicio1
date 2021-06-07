@@ -1,0 +1,26 @@
+Inicio pseudocodigoEjercicio1
+
+	Variable numeroEntero
+	Variable pares = 0
+	Variable impares = 0
+	Variable auxiliar
+	Variable i
+	
+	Escribir "Ingrese un numero entero: "
+	Leer numeroEntero
+	
+	Desde i=0; hasta i<=numeroEntero; aumentar i = i + 1 hacer
+		auxiliar = funcionAleatorio(1,100)
+		
+		Si(auxiliar%2==0) hacer
+			pares = pares + 1
+		FinSi
+		Sino
+			impares = impares + 1
+		FinSino
+	FinDesde
+	
+	Escribir "Hay " + pares + " numeros pares."
+	Escribir "Hay " + imapares + " numeros impares."
+	
+Fin
